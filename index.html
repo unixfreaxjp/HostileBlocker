@@ -32,9 +32,10 @@ By this tool you can extract the list of the blocklist in a text file via bash s
 
 <p>The example of the common USAGE commands is as follows:</p>
 
-<pre><code>$ bash daeshfeed.sh             # extracting text data in stdout
+<pre><code>$ bash daeshfeed.sh             # extracting blob of ASCII text data per page in stdout
 $ bash daeshfeed.sh | wc -l     # counting the records
-$ bash daeshfeed.sh &gt;&gt; file.txt # dumping the output into the file
+$ bash daeshfeed.sh &gt;&gt; file.txt # dumping the output into a file.txt ASCII text file
+$ expect sendfileftp.expect     # will upload the text file into a predefined ftp server
 </code></pre>
 
 <p>The example of the output is as follows:</p>
