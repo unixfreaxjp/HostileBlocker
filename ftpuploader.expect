@@ -1,0 +1,16 @@
+#!/usr/bin/expect
+# ftp uploader template 1.2
+# @unixfreaxjp
+#
+spawn ftp HOSTNAME                       # provide ftp hostname here
+expect "Name (ftp.FTPDOMAINNAME:root):"  # provide ftp domain and user for automation here
+send "USERNAME\r"                        # provide the username here
+expect "Password:"
+send "PASSWORD\r"                        # provide the password here
+expect "ftp>"
+send "lcd DIRPATH\r"                     # any desired location
+expect "ftp>"
+send "put FILENAME\r"                    # any file to upload
+expect "ftp>"
+send "bye\r"
+#interact
