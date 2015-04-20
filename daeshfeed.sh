@@ -42,11 +42,11 @@
 # binaries path;
 # (coded in Intel Solaris 10/OpenSource, pls adjust your UNIX bins path)
 #
-SED="/bin/sed"
-CUT="/usr/bin/cut"
-SORT="/usr/bin/sort"
-WC="/usr/bin/wc"
-LYNX="/usr/bin/lynx"
+SED  = "/bin/sed"
+CUT  = "/usr/bin/cut"
+SORT = "/usr/bin/sort"
+WC   = "/usr/bin/wc"
+LYNX = "/usr/bin/lynx"
 #
 # blocklist info:
 #
@@ -55,8 +55,8 @@ PAGE=5    # 1 page = 500 records, in this default value..if you have 2400 record
 #
 # do not change these values
 #
-BETWEEN="/References/,/subscriptions/p" # to be used by sed
-COUNTER=1 #dont change this
+BETWEEN="/References/,/subscriptions/p"
+COUNTER=1
 UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.1"
 #
 # PROCESS:
