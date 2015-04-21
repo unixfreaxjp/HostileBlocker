@@ -86,7 +86,7 @@ UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.1"
 #
 # PROCESS:
 #
-while 1>2; do
+while true; do
 case "$1" in
 'id')
     let PAGE=PAGE+1
