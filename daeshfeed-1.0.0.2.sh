@@ -51,11 +51,11 @@
 # binaries path;
 # (coded in Intel Solaris 10/OpenSource, pls adjust your UNIX bins path)
 #
-SED  = "/bin/sed"
-CUT  = "/usr/bin/cut"
-SORT = "/usr/bin/sort"
-WC   = "/usr/bin/wc"
-LYNX = "/usr/bin/lynx"
+SED="/bin/sed"
+CUT="/usr/bin/cut"
+SORT="/usr/bin/sort"
+WC="/usr/bin/wc"
+LYNX="/usr/bin/lynx"
 #
 # blocklist info:
 #
