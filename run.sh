@@ -17,7 +17,7 @@
     sleep 1
 #Upload txt file to ftp
     echo "      3. Uploading data"
-    /usr/bin/expect PATH/sendfileftp.expect
+    /usr/bin/expect PATH/ftpuploader.expect
     sleep 1
 #End
     sleep 1
