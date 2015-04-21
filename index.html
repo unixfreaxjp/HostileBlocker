@@ -33,24 +33,40 @@ You can easily set into any desriable blocklist by changing $URL value.</p>
 
 <p>The example of the common USAGE commands is as follows:</p>
 
-<pre><code>$ bash daeshfeed.sh             # extracting blob of ASCII text data per page in stdout
-$ bash daeshfeed.sh | wc -l     # counting the records
-$ bash daeshfeed.sh &gt;&gt; file.txt # dumping the output into a file.txt ASCII text file
-$ expect sendfileftp.expect     # will upload the text file into a predefined ftp server
-$ bash run.sh                   # a simple user interface as a sample to automate all functions above 
+<pre><code></code>USAGE: bash daeshfeed.sh [handle|id] (all UNIX pipes are available)
+
+$ bash daeshfeed.sh handle                  # extracting text data handle URL in stdout
+$ bash daeshfeed.sh id                      # extracting text data twitter ID in stdout
+$ bash daeshfeed.sh                 　      # show USAGE
+$ bash daeshfeed.sh [handle|id] | wc -l     # counting the records
+$ bash daeshfeed.sh [handle|id] >> file.txt # dumping the output into the file
+
+                  # a simple user interface as a sample to automate all functions above 
 </code></pre>
 
 <p>The example of the output is as follows:</p>
 
-<pre><code>  :
+<pre><code>$ bash daeshfeed.sh handle
+    :
 https://twitter.com/GdyJh21uNC4rmK5
 https://twitter.com/Em_Yousef
 https://twitter.com/salem_al_hamed
 https://twitter.com/spagov
-https://twitter.com/ayan17is
-https://twitter.com/Guessgx
-https://twitter.com/gorba701
  :
+
+$ bash daeshfeed.sh id
+    :
+3174033874
+3148342932
+849796758
+3165378128
+3159418609
+ :
+
+$ bash daeshfeed.sh
+
+daeshfeed.sh v 2.0.0.1 USAGE: bash daeshfeed.sh [handle|id] - OpAntiISIS
+
 </code></pre>
 
 <p>The tool has just been released for the good purpose only.
@@ -65,7 +81,7 @@ If you're using the GitHub for Mac, simply sync your repository and you'll see t
 <a id="requirement" class="anchor" href="#requirement" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirement</h2>
 
 <pre><code>Language: bash
-Binaries: bash, lynx, sed, cat, cut, sort, sleep
+Binaries: bash, lynx, sed, cat, cut, sort, sleep, grep
 Additional: expect is needed for the ftp uploader script
 Multi Platform usage can be applied with the adjustment of each binary's path
 Tested on: Mc OS X, Solaris 10 Intel, FreeBSD 10 &amp; Debian Wheezy 
