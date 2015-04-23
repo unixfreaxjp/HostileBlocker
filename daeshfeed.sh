@@ -108,7 +108,7 @@ case "$1" in
     break
     ;;
 *)
-    echo $err; echo "daeshfeed.sh v 2.0.0.1 USAGE: bash daeshfeed.sh [handle|id] - OpAntiISIS"; echo
+    echo $err; echo "daeshfeed.sh v 2.0.0.3 USAGE: bash daeshfeed.sh [handle|id] - OpAntiISIS"; echo
     exit 1
 esac; done
 #
