@@ -3,8 +3,8 @@
 # PROJECT NAME:
 #
 # Twitter Blocklist's Text Dumper
-# daeshfeed.sh v 2.0.0 build 2 (2.0.0.2)
-# Wed Apr 22 00:57:54 JST 2015
+# daeshfeed.sh v 2.0.0 build 3 (2.0.0.3)
+# Thu Apr 23 22:15:48 2015
 # License: FreeBSD http://opensource.org/licenses/BSD-2-Clause
 # Owner and maintainer: https://twitter.com/OpAntiISIS
 #
@@ -39,6 +39,7 @@
 # 2. additional requirement binary: grep
 # 3. binary initiation fixed
 # 4. build 2 blocklist URL changed
+# 4. build 3 data exceeding 3000 changed to support up to 4000
 #
 # RESULT:
 #
@@ -46,10 +47,10 @@
 #     (use this to trouble shoot or to run script without installation, copy paste the desired code into bash shell & hit enter)
 #
 # (1.1 for handle name URL output)
-# for i in 1 2 3 4 5 6 ; do lynx -useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.1 Lynx" "https://blocktogether.org/show-blocks/f8f4e0a9065caa15c6588edb77cdadfc2f1472f9e00e4bc3841cfebc7d41731414641259aebc64882d14cc404cf5e0f8?page=$i" -dump | sort -r | sed -n '/References/,/subscriptions/p' | sed '1d' | sed '$d' | cut -c 7- ; done
+# for i in 1 2 3 4 5 6 7 8 ; do lynx -useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.1 Lynx" "https://blocktogether.org/show-blocks/f8f4e0a9065caa15c6588edb77cdadfc2f1472f9e00e4bc3841cfebc7d41731414641259aebc64882d14cc404cf5e0f8?page=$i" -dump | sort -r | sed -n '/References/,/subscriptions/p' | sed '1d' | sed '$d' | cut -c 7- ; done
 #
 # (1.2. for twitter ID output)
-# for i in 1 2 3 4 5 6 ; do lynx -useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.1 Lynx" "https://blocktogether.org/show-blocks/f8f4e0a9065caa15c6588edb77cdadfc2f1472f9e00e4bc3841cfebc7d41731414641259aebc64882d14cc404cf5e0f8?page=$i" -source  | grep "data-uid=" | grep -E -o "[0-9]{5,}" ; done
+# for i in 1 2 3 4 5 6 7 8 ; do lynx -useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/537.1 Lynx" "https://blocktogether.org/show-blocks/f8f4e0a9065caa15c6588edb77cdadfc2f1472f9e00e4bc3841cfebc7d41731414641259aebc64882d14cc404cf5e0f8?page=$i" -source  | grep "data-uid=" | grep -E -o "[0-9]{5,}" ; done
 #
 #
 # (2) bash script
@@ -78,7 +79,7 @@ GREP="/bin/grep"
 #URL="https://blocktogether.org/show-blocks/1ec31aac864b8e3d409d51c3a045733e5d06bb48d7c4839215b4d6e991ee0aa71364d5ebb806f304d82f54326c1c6b24?page="
 #URL="https://blocktogether.org/show-blocks/1d77199be4921c7453765d2abc8336105def8b864f5b00814185a815036525502f02b9762bf1a47c01d5c609317673f6?page="
 URL="https://blocktogether.org/show-blocks/f8f4e0a9065caa15c6588edb77cdadfc2f1472f9e00e4bc3841cfebc7d41731414641259aebc64882d14cc404cf5e0f8?page="
-PAGE=6    # 1 page = 500 records, in this default value..if you have 2400 records = 5 pages
+PAGE=8    # 1 page = 500 records, in this default value..if you have 2400 records = 5 pages
 #
 # do not change these values
 #
