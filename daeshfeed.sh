@@ -79,7 +79,7 @@ GREP="/bin/grep"
 #URL="https://blocktogether.org/show-blocks/1ec31aac864b8e3d409d51c3a045733e5d06bb48d7c4839215b4d6e991ee0aa71364d5ebb806f304d82f54326c1c6b24?page="
 #URL="https://blocktogether.org/show-blocks/1d77199be4921c7453765d2abc8336105def8b864f5b00814185a815036525502f02b9762bf1a47c01d5c609317673f6?page="
 URL="https://blocktogether.org/show-blocks/f8f4e0a9065caa15c6588edb77cdadfc2f1472f9e00e4bc3841cfebc7d41731414641259aebc64882d14cc404cf5e0f8?page="
-PAGE=8    # 1 page = 500 records, in this default value..if you have 2400 records = 5 pages
+PAGE=10    # 1 page = 500 records, in this default value..if you have 2400 records = 5 pages
 #
 # do not change these values
 #
