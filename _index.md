@@ -1,6 +1,6 @@
 ### You are in HostileBlocker project
-This project is meant to support the usage of blocklist in twitter using the BlockTogether tool. 
-By this tool you can extract the list of the blocklist in a text file via bash shell command, to help the multipurpose customization and usage for your needs. 
+This project was started meant to support the usage of blocklist in twitter using the BlockTogether tool. 
+By this tool you could  extract the list of the blocklist in a text file via bash shell command, to help the multipurpose customization and usage for your needs. Due to the API changes the tool is currently not working, but the concept can still be used for your similar purpose, it is now shared for the security community.
 
 The example of the common USAGE commands is as follows:
 
@@ -26,8 +26,7 @@ Tested on: Mc OS X, Solaris 10 Intel, FreeBSD 10 & Debian Wheezy
 ```
 
 ### Authors and Contributors
-This tool is coded by @unixfreaxjp under request from @OpAntiISIS (project owner)
-The tool is work as per it is, the coder is not holding any responsiblity for the misusing of the tool.
+This tool is coded by @unixfreaxjp,was working as per it is, the coder is not holding any responsiblity for the misusing of the tool.
 
 ### Support or Contact
-Having trouble with tool? Please contact the owner and he’ll help you sort it out.
+Having trouble with tool? Please contact the coder and he’ll help you sort it out.
