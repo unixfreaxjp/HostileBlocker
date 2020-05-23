@@ -3,10 +3,9 @@
 # PROJECT NAME:
 #
 # Twitter Blocklist's Text Dumper
-# daeshfeed.sh v 1.0.0 built2
+# HostileBlocker v 1.0.0 built2
 # Tue Apr 21 19:03:36 2015
 # License: FreeBSD http://opensource.org/licenses/BSD-2-Clause
-# maintainer: https://twitter.com/OpAntiISIS
 #
 # PROJECT REQUIREMENT:
 #
