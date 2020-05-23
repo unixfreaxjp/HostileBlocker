@@ -1,6 +1,5 @@
 #!/usr/bin/expect
 # ftp uploader template 1.2
-# OpAntiISIS Team
 #
 spawn ftp HOSTNAME                       # provide ftp hostname here
 expect "Name (ftp.FTPDOMAINNAME:root):"  # provide ftp domain and user for automation here
