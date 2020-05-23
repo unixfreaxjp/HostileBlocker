@@ -14,7 +14,7 @@ The tool has just been released for the good purpose only.
 If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.
 
 ### License
-BSD version 2 Simplified (FreeBSD) designed for the usage of good people OpAntiISIS project.
+BSD version 2 Simplified (FreeBSD)
 
 ## Requirement
 ```
